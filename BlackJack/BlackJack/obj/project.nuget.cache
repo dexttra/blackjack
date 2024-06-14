@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "o9M+NCmGTFJR0jXZYwPbE/Hw7ijTiT2Hjt5QrGGI5vIF5L45z5eN+Rhqzb1vRE2/SiU3tl8c7Pw2O6PxE5XDzw==",
+  "success": true,
+  "projectFilePath": "D:\\repos\\Blackjack\\BlackJack\\BlackJack\\BlackJack.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DentalDesign\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\DentalDesign\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\DentalDesign\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\DentalDesign\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.29\\microsoft.netcore.app.host.win-x64.6.0.29.nupkg.sha512"
+  ],
+  "logs": []
+}
