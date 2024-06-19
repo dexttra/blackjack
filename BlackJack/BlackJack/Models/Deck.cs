@@ -19,11 +19,11 @@
 
         public Card Deal()
         {
-            // get a card at random
+            // Получаем случайную карту
             var random = new Random();
             int index = random.Next(Cards.Count);
 
-            // retrieve card and then remove it from the deck
+            // Достаем карту, а затем удаляем ее из колоды
             var card = Cards[index];
             Cards.Remove(card);
 

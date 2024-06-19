@@ -8,7 +8,7 @@
         public Dealer Dealer { get; set; }
         public bool NeedsDeal { get; set; }
 
-        // enum for letting controller know result of deal, hit, or stand action
+        // Перечисление, позволяющее сообщить контроллеру результат сделки, удара или действия остановки
         public enum Result  {
             Shuffling, Continue, DealerBust, DealerBlackJack, DealerWin,
             PlayerBust, PlayerBlackJack, PlayerWin, DoubleBlackJack, Push
@@ -16,14 +16,14 @@
 
         public Game(IHttpContextAccessor accessor)
         {
-            // retrieve game data from session
+            // Получить игровые данные из сеанса
             session = accessor.HttpContext?.Session!;
 
             Deck = session.GetObject<Deck>("deck") ?? new Deck();
             Player = session.GetObject<Player>("player") ?? new Player();
             Dealer = session.GetObject<Dealer>("dealer") ?? new Dealer();
 
-            int dealVal = session.GetInt32("deal") ?? 1;  // default value of true (1)
+            int dealVal = session.GetInt32("deal") ?? 1;  // Значение по умолчанию - 1
             NeedsDeal = Convert.ToBoolean(dealVal);
         }
 
@@ -31,7 +31,7 @@
         {
             var result = Result.Continue;  // default result
 
-            // on first load, deck is null - shuffle
+            // Перемешиваем если колода пуста
             if (Deck.Cards == null) Deck.Shuffle();
 
             if (Deck.Cards?.Count < 4)
@@ -73,7 +73,7 @@
 
         public Result Hit()
         {
-            var result = Result.Continue;  // default result
+            var result = Result.Continue;  // Дефолтный результат
 
             bool needsShuffle = HitPlayer();
 
