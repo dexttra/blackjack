@@ -8,96 +8,106 @@ namespace BlackJack.Controllers
         private IGame game { get; set; }
         public HomeController(IGame g) => game = g;
 
-        public IActionResult Game() => View(game);
         public IActionResult Index() => View();
+        public IActionResult Game() => View(game);
 
-        [HttpPost("Deal")]
+        [HttpPost]
         public IActionResult Deal()
         {
             var result = game.Deal();
 
             if (result == Models.Game.Result.Shuffling)
             {
-                TempData["message"] = "Shuffling. Press Deal to continue.";
+                TempData["message"] = "Перемешивание. Нажмите Deal, чтобы продолжить.";
                 TempData["background"] = "info";
             }
             else if (result == Models.Game.Result.PlayerBlackJack)
             {
-                TempData["message"] = "Blackjack! You win!";
+                TempData["message"] = "Blackjack! Вы выиграли!";
                 TempData["background"] = "success";
             }
             else if (result == Models.Game.Result.DealerBlackJack)
             {
-                TempData["message"] = "Dang! Dealer got a Blackjack! You lose.";
+                TempData["message"] = "Увы! У дилера Blackjack! Вы проиграли.";
                 TempData["background"] = "danger";
             }
             else if (result == Models.Game.Result.DoubleBlackJack)
             {
-                TempData["message"] = "Push";
+                TempData["message"] = "Пуш";
                 TempData["background"] = "info";
             }
 
             return RedirectToAction("Game");
-
         }
 
-        [HttpPost("Hit")]
+        [HttpPost]
         public IActionResult Hit()
         {
             var result = game.Hit();
 
             if (result == Models.Game.Result.Shuffling)
             {
-                TempData["message"] = "Shuffling. Press Hit to continue.";
+                TempData["message"] = "Перемешивание. Нажмите Hit, чтобы продолжить.";
                 TempData["background"] = "info";
             }
             else if (result == Models.Game.Result.PlayerBust)
             {
-                TempData["message"] = "BUST! You lose.";
+                TempData["message"] = "Перебор! Вы проиграли.";
                 TempData["background"] = "danger";
             }
 
             return RedirectToAction("Game");
         }
 
-        [HttpPost("Stand")]
+        [HttpPost]
         public IActionResult Stand()
         {
             var result = game.Stand();
 
             if (result == Models.Game.Result.Shuffling)
             {
-                TempData["message"] = "Shuffling. Press Hit to continue.";
+                TempData["message"] = "Перемешивание. Нажмите Hit, чтобы продолжить.";
                 TempData["background"] = "info";
             }
             else if (result == Models.Game.Result.Continue)
             {
-                TempData["message"] = "Dealer needs another card. Hit Stand to continue.";
+                TempData["message"] = "Дилеру нужна еще одна карта. Нажмите Stand, чтобы продолжить.";
                 TempData["background"] = "info";
             }
             else if (result == Models.Game.Result.DealerBust)
             {
-                TempData["message"] = "Dealer BUST! You win!";
+                TempData["message"] = "Перебор у дилера! Вы выиграли!";
                 TempData["background"] = "success";
             }
             else if (result == Models.Game.Result.DealerWin)
             {
-                TempData["message"] = "You lose.";
+                TempData["message"] = "Вы проиграли.";
                 TempData["background"] = "danger";
             }
             else if (result == Models.Game.Result.PlayerWin)
             {
-                TempData["message"] = "You win!";
+                TempData["message"] = "Вы выиграли!";
                 TempData["background"] = "success";
             }
             else if (result == Models.Game.Result.Push)
             {
-                TempData["message"] = "PUSH";
+                TempData["message"] = "Пуш";
                 TempData["background"] = "info";
             }
 
             return RedirectToAction("Game");
+        }
 
+        public IActionResult NewGame()
+        {
+            game = new Game(new HttpContextAccessor());
+            game.Deal();
+            return RedirectToAction("Game");
+        }
+
+        public IActionResult Profile()
+        {
+            return View();
         }
     }
 }

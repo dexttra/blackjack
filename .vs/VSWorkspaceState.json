@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BlackJack"
+    "\\BlackJack",
+    "\\BlackJack\\BlackJack",
+    "\\BlackJack\\BlackJack\\Controllers",
+    "\\BlackJack\\BlackJack\\Models",
+    "\\BlackJack\\BlackJack\\Views",
+    "\\BlackJack\\BlackJack\\Views\\Home"
   ],
-  "SelectedNode": "\\BlackJack\\BlackJack.sln",
+  "SelectedNode": "\\BlackJack\\BlackJack\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
