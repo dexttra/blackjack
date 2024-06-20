@@ -1,15 +1,22 @@
+using Blackjack.Db;
+using Blackjack.Db.Models;
 using BlackJack.Models;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Получаем строку подключения из файла конфигурации
+string connection = builder.Configuration.GetConnectionString("blackjack");
 
 // Add services to the container.
 builder.Services.AddMemoryCache();
 builder.Services.AddSession();
-
 builder.Services.AddControllersWithViews();
-
 builder.Services.AddTransient<IGame, Game>();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddTransient<IPlayerStatsRepository, PlayerStatsDbRepository>();
+
+builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(connection));
 
 var app = builder.Build();
 

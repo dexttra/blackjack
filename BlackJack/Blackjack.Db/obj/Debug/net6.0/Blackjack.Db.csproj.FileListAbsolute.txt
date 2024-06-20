@@ -1,0 +1,15 @@
+D:\repos\Blackjack\BlackJack\Blackjack.Db\bin\Debug\net6.0\Blackjack.Db.deps.json
+D:\repos\Blackjack\BlackJack\Blackjack.Db\bin\Debug\net6.0\Blackjack.Db.runtimeconfig.json
+D:\repos\Blackjack\BlackJack\Blackjack.Db\bin\Debug\net6.0\Blackjack.Db.dll
+D:\repos\Blackjack\BlackJack\Blackjack.Db\bin\Debug\net6.0\Blackjack.Db.pdb
+D:\repos\Blackjack\BlackJack\Blackjack.Db\obj\Debug\net6.0\Blackjack.Db.csproj.AssemblyReference.cache
+D:\repos\Blackjack\BlackJack\Blackjack.Db\obj\Debug\net6.0\Blackjack.Db.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\Blackjack\BlackJack\Blackjack.Db\obj\Debug\net6.0\Blackjack.Db.AssemblyInfoInputs.cache
+D:\repos\Blackjack\BlackJack\Blackjack.Db\obj\Debug\net6.0\Blackjack.Db.AssemblyInfo.cs
+D:\repos\Blackjack\BlackJack\Blackjack.Db\obj\Debug\net6.0\Blackjack.Db.csproj.CoreCompileInputs.cache
+D:\repos\Blackjack\BlackJack\Blackjack.Db\obj\Debug\net6.0\Blackjack.Db.sourcelink.json
+D:\repos\Blackjack\BlackJack\Blackjack.Db\obj\Debug\net6.0\Blackjack.Db.dll
+D:\repos\Blackjack\BlackJack\Blackjack.Db\obj\Debug\net6.0\refint\Blackjack.Db.dll
+D:\repos\Blackjack\BlackJack\Blackjack.Db\obj\Debug\net6.0\Blackjack.Db.pdb
+D:\repos\Blackjack\BlackJack\Blackjack.Db\obj\Debug\net6.0\Blackjack.Db.genruntimeconfig.cache
+D:\repos\Blackjack\BlackJack\Blackjack.Db\obj\Debug\net6.0\ref\Blackjack.Db.dll

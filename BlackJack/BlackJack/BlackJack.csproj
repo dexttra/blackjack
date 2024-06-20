@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Blackjack.Db\Blackjack.Db.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -139,9 +139,7 @@
             return result;
         }
 
-        /****************************************
-         * Private helper properties and methods
-         ***************************************/
+      
         private int Bet => 10;
         private bool IsDealerHandHigher => Dealer.Hand.Total > Player.Hand.Total;
         private bool IsPlayerHandHigher => Player.Hand.Total > Dealer.Hand.Total;
@@ -189,6 +187,7 @@
             session.SetObject("dealer", Dealer);
             session.SetInt32("deal", Convert.ToInt32(NeedsDeal));
         }
+
 
 
     }
