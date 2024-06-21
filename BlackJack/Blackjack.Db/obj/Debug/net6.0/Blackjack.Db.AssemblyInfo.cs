@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Blackjack.Db")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cef3b9946904de4aea68af1cf4cb794a21c62f45")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c7286d208364fa9dfd802a5ca2d7b91306a03ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("Blackjack.Db")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Blackjack.Db")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,12 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BlackJack.Models;
+using Blackjack.Db.Models;
 
 namespace BlackJack.Controllers
 {
     public class HomeController : Controller
     {
         private IGame game { get; set; }
-        public HomeController(IGame g) => game = g;
+        private readonly IPlayerStatsRepository playerStatsRepository;
+        
+        public HomeController(IGame g, IPlayerStatsRepository playerStatsRepository)
+        {
+            game = g;
+            this.playerStatsRepository = playerStatsRepository;
+        }
 
         public IActionResult Index() => View();
         public IActionResult Game() => View(game);
@@ -25,11 +32,15 @@ namespace BlackJack.Controllers
             {
                 TempData["message"] = "Blackjack! Вы выиграли!";
                 TempData["background"] = "success";
+                playerStatsRepository.AddBlackjack(Constants.Player);
+
+
             }
             else if (result == Models.Game.Result.DealerBlackJack)
             {
                 TempData["message"] = "Увы! У дилера Blackjack! Вы проиграли.";
                 TempData["background"] = "danger";
+                playerStatsRepository.AddLosses(Constants.Player);
             }
             else if (result == Models.Game.Result.DoubleBlackJack)
             {
@@ -54,6 +65,7 @@ namespace BlackJack.Controllers
             {
                 TempData["message"] = "Перебор! Вы проиграли.";
                 TempData["background"] = "danger";
+                playerStatsRepository.AddLosses(Constants.Player);
             }
 
             return RedirectToAction("Game");
@@ -78,16 +90,19 @@ namespace BlackJack.Controllers
             {
                 TempData["message"] = "Перебор у дилера! Вы выиграли!";
                 TempData["background"] = "success";
+                playerStatsRepository.AddWins(Constants.Player);
             }
             else if (result == Models.Game.Result.DealerWin)
             {
                 TempData["message"] = "Вы проиграли.";
                 TempData["background"] = "danger";
+                playerStatsRepository.AddLosses(Constants.Player);
             }
             else if (result == Models.Game.Result.PlayerWin)
             {
                 TempData["message"] = "Вы выиграли!";
                 TempData["background"] = "success";
+                playerStatsRepository.AddWins(Constants.Player);
             }
             else if (result == Models.Game.Result.Push)
             {

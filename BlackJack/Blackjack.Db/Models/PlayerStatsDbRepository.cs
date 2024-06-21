@@ -8,35 +8,89 @@ namespace Blackjack.Db.Models
 {
     public class PlayerStatsDbRepository : IPlayerStatsRepository
     {
-        private readonly DatabaseContext _context;
+        private readonly DatabaseContext context;
 
         public PlayerStatsDbRepository(DatabaseContext context)
         {
-            _context = context;
+            this.context = context;
         }
 
-        public PlayerStats GetPlayerStats()
+        public void AddPlayerStats(PlayerStats playerStats)
         {
-            return _context.PlayerStats.FirstOrDefault();
+            context.PlayersStats.Add(playerStats);
+            context.SaveChanges();
         }
-
-        public void UpdatePlayerStats(PlayerStats stats)
+        public void AddBlackjack(int id)
         {
-            var existingStats = _context.PlayerStats.FirstOrDefault();
-
-            if (existingStats == null)
+            var stats = GetPlayerStats(id);
+            if (stats == null)
             {
-                _context.PlayerStats.Add(stats);
+                AddPlayerStats(new PlayerStats
+                {
+                    Wins = 1,
+                    TotalGames = 1,
+                    Blackjacks = 1,
+                    Losses = 0
+                });
             }
             else
             {
-                existingStats.Wins = stats.Wins;
-                existingStats.Losses = stats.Losses;
-                existingStats.TotalGames = stats.TotalGames;
-                existingStats.Blackjacks = stats.Blackjacks;
+                stats.Blackjacks += 1;
+                stats.Wins += 1;
+                stats.TotalGames += 1;
             }
+            context.SaveChanges();
 
-            _context.SaveChanges();
+        }
+
+        public void AddLosses(int id)
+        {
+            var stats = GetPlayerStats(id);
+            if (stats == null)
+            {
+                AddPlayerStats(new PlayerStats
+                {
+                    Wins = 0,
+                    TotalGames = 1,
+                    Blackjacks = 0,
+                    Losses = 1
+                });
+            }
+            else
+            {
+                stats.Losses += 1;
+                stats.TotalGames += 1;
+            }
+            context.SaveChanges();
+        }
+
+       
+
+        public void AddWins(int id)
+        {
+            var stats = GetPlayerStats(id);
+            if (stats == null)
+            {
+                AddPlayerStats(new PlayerStats
+                {
+                    Wins = 1,
+                    TotalGames = 1,
+                    Blackjacks = 0,
+                    Losses = 0
+                });
+            }
+            else
+            {
+                stats.Wins += 1;
+                stats.TotalGames += 1;
+            }
+            context.SaveChanges();
+
+        }
+
+        public PlayerStats GetPlayerStats(int id)
+        {
+           return context.PlayersStats.FirstOrDefault(p => p.Id == id);
         }
     }
 }
