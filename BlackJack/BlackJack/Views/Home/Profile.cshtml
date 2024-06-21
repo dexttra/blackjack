@@ -1,4 +1,13 @@
-﻿<h1>Профиль</h1>
+﻿@model PlayerStats
+
+<h1>Профиль</h1>
+
+<div>
+    <p>Победы: @Model.Wins</p>
+    <p>Поражения: @Model.Losses</p>
+    <p>Блэкджеки: @Model.Blackjacks</p>
+    <p>Общее количество игр: @Model.TotalGames</p>
+</div>
 
 <div style="position: fixed; top: 10px; left: 10px;">
     <a href="@Url.Action("Index", "Home")" class="btn btn-danger">Главное меню</a>

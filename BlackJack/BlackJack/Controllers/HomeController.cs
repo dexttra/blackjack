@@ -122,7 +122,8 @@ namespace BlackJack.Controllers
 
         public IActionResult Profile()
         {
-            return View();
+            var stats = playerStatsRepository.GetPlayerStats(Constants.Player);
+			return View(stats);
         }
     }
 }
