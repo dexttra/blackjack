@@ -1,3 +1,11 @@
 ﻿@model IGame
 
-<h4 class="bg-light p-4">Total Winnings: @Model.Player.TotalWinnings</h4>
+<style>
+    .total-winnings {
+        color: white;
+        background-color: transparent; /* Убираем фон */
+        padding: 4px; /* Можете оставить, если нужен отступ */
+    }
+</style>
+
+<h4 class="total-winnings">Общий счет: @Model.Player.TotalWinnings</h4>

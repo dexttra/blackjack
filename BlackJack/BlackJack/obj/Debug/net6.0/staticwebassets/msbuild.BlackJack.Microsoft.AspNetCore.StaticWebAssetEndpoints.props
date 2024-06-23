@@ -4,7 +4,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\site.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"71"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022s9L0FXa5k9z4z65uFtDv01OVsC5ig\u002BQchv07bw2jlZQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 14 Jun 2024 13:01:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"537"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221pYYzS6JhEsugXuGw5hhohFC8fhNPXktKV35Pv2tZIY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Jun 2024 09:38:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BlackJack/favicon.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))</AssetFile>
@@ -257,6 +257,12 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2862"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022pHjrCFkStEznx5CnEZBNmU6Kzi75TUbqAvQi1Y965pk=\u0022"},{"Name":"Last-Modified","Value":"Fri, 14 Jun 2024 13:01:06 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BlackJack/images/background.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\background.jpg))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"91555"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022xCHWnWSCUl6X4t7FMVgdsv/hUIHyIToXe1V\u002BsbIV/H0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Jun 2024 09:24:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BlackJack/images/J-C.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\J-C.svg))</AssetFile>

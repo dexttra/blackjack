@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0Rw0BRQvRmGEd6jra3qB+GuyuK/22OFlCj7OhBgW3SI=",
+  "Hash": "SvQeUJLhXKwj7tyaSf5qaCLANa2hrK48RHomEqqLhdU=",
   "Source": "BlackJack",
   "BasePath": "_content/BlackJack",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "d4fbka1c2v",
-      "Integrity": "s9L0FXa5k9z4z65uFtDv01OVsC5ig+Qchv07bw2jlZQ=",
+      "Fingerprint": "6su4ikggq9",
+      "Integrity": "1pYYzS6JhEsugXuGw5hhohFC8fhNPXktKV35Pv2tZIY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -918,6 +918,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\back.svg"
+    },
+    {
+      "Identity": "D:\\repos\\Blackjack\\BlackJack\\BlackJack\\wwwroot\\images\\background.jpg",
+      "SourceId": "BlackJack",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\repos\\Blackjack\\BlackJack\\BlackJack\\wwwroot\\",
+      "BasePath": "_content/BlackJack",
+      "RelativePath": "images/background.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "89rt76zxky",
+      "Integrity": "xCHWnWSCUl6X4t7FMVgdsv/hUIHyIToXe1V+sbIV/H0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\background.jpg"
     },
     {
       "Identity": "D:\\repos\\Blackjack\\BlackJack\\BlackJack\\wwwroot\\images\\J-C.svg",
@@ -2402,7 +2423,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "71"
+          "Value": "537"
         },
         {
           "Name": "Content-Type",
@@ -2410,11 +2431,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"s9L0FXa5k9z4z65uFtDv01OVsC5ig+Qchv07bw2jlZQ=\""
+          "Value": "\"1pYYzS6JhEsugXuGw5hhohFC8fhNPXktKV35Pv2tZIY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Jun 2024 13:01:06 GMT"
+          "Value": "Sun, 23 Jun 2024 09:38:27 GMT"
         }
       ],
       "EndpointProperties": []
@@ -3591,6 +3612,34 @@
         {
           "Name": "Last-Modified",
           "Value": "Fri, 14 Jun 2024 13:01:06 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/background.jpg",
+      "AssetFile": "D:\\repos\\Blackjack\\BlackJack\\BlackJack\\wwwroot\\images\\background.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91555"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xCHWnWSCUl6X4t7FMVgdsv/hUIHyIToXe1V+sbIV/H0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Jun 2024 09:24:07 GMT"
         }
       ],
       "EndpointProperties": []

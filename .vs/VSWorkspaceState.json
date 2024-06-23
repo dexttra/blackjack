@@ -8,6 +8,6 @@
     "\\BlackJack\\BlackJack\\Views",
     "\\BlackJack\\BlackJack\\Views\\Home"
   ],
-  "SelectedNode": "\\BlackJack\\BlackJack\\Views\\Home\\Index.cshtml",
+  "SelectedNode": "\\BlackJack\\BlackJack\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }

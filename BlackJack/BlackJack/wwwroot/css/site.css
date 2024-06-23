@@ -2,3 +2,12 @@
     height: 150px; /*200*/
     width: 100px; /*150*/
 }
+body {
+    background-image: url('https://w0.peakpx.com/wallpaper/111/608/HD-wallpaper-casino-roulette-table-chips-casino-concepts.jpg');
+    background-repeat: no-repeat; /*»зображение не будет повтор€тьс€*/
+    background-attachment: fixed; /*»зображение фиксировано и не прокручиваетс€ вместе со страницей*/
+    background-size: cover; /*»зображение раст€гиваетс€ или сжимаетс€, чтобы покрыть весь фоновый контейнер*/
+}
+.white-text {
+    color: white;
+}

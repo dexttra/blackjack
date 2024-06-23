@@ -1,14 +1,60 @@
 ﻿@model PlayerStats
 
-<h1>Профиль</h1>
+<style>
+    .profile-text {
+        color: white;
+    }
 
-<div>
-    <p>Победы: @Model.Wins</p>
-    <p>Поражения: @Model.Losses</p>
-    <p>Блэкджеки: @Model.Blackjacks</p>
-    <p>Общее количество игр: @Model.TotalGames</p>
-</div>
+    .profile-stats-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 1.25em; /* Увеличивает шрифт */
+    }
+
+        .profile-stats-table th, .profile-stats-table td {
+            border: 1px solid white; /* Белая граница */
+            padding: 10px;
+            text-align: left;
+        }
+
+        .profile-stats-table th {
+            background-color: #333; /* Темный фон для заголовков */
+        }
+
+        .profile-stats-table td {
+            background-color: #444; /* Темный фон для данных */
+        }
+</style>
+
+<h1 class="profile-text">Профиль</h1>
+
+<table class="profile-stats-table profile-text">
+    <thead>
+        <tr>
+            <th>Показатель</th>
+            <th>Значение</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Победы</td>
+            <td>@Model.Wins</td>
+        </tr>
+        <tr>
+            <td>Поражения</td>
+            <td>@Model.Losses</td>
+        </tr>
+        <tr>
+            <td>Блэкджеки</td>
+            <td>@Model.Blackjacks</td>
+        </tr>
+        <tr>
+            <td>Общее количество игр</td>
+            <td>@Model.TotalGames</td>
+        </tr>
+    </tbody>
+</table>
 
 <div style="position: fixed; top: 10px; left: 10px;">
-    <a href="@Url.Action("Index", "Home")" class="btn btn-danger">Главное меню</a>
+    <a href="@Url.Action("Index", "Home")" class="btn btn-secondary btn-lg btn-block">Главное меню</a>
 </div>

@@ -44,7 +44,7 @@ namespace BlackJack.Controllers
             }
             else if (result == Models.Game.Result.DoubleBlackJack)
             {
-                TempData["message"] = "Пуш";
+                TempData["message"] = "Push";
                 TempData["background"] = "info";
             }
 
@@ -106,7 +106,7 @@ namespace BlackJack.Controllers
             }
             else if (result == Models.Game.Result.Push)
             {
-                TempData["message"] = "Пуш";
+                TempData["message"] = "Push";
                 TempData["background"] = "info";
             }
 

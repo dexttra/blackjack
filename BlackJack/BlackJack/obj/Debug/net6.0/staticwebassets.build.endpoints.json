@@ -12,7 +12,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "71"
+          "Value": "537"
         },
         {
           "Name": "Content-Type",
@@ -20,11 +20,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"s9L0FXa5k9z4z65uFtDv01OVsC5ig+Qchv07bw2jlZQ=\""
+          "Value": "\"1pYYzS6JhEsugXuGw5hhohFC8fhNPXktKV35Pv2tZIY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Jun 2024 13:01:06 GMT"
+          "Value": "Sun, 23 Jun 2024 09:38:27 GMT"
         }
       ],
       "EndpointProperties": []
@@ -1537,6 +1537,34 @@
         {
           "Name": "Last-Modified",
           "Value": "Fri, 14 Jun 2024 13:01:06 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "images/background.jpg",
+      "AssetFile": "images/background.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91555"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xCHWnWSCUl6X4t7FMVgdsv/hUIHyIToXe1V+sbIV/H0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Jun 2024 09:24:07 GMT"
         }
       ],
       "EndpointProperties": []

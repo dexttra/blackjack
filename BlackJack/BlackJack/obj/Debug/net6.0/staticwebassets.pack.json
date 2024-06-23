@@ -221,6 +221,10 @@
       "PackagePath": "staticwebassets\\images\\back.svg"
     },
     {
+      "Id": "D:\\repos\\Blackjack\\BlackJack\\BlackJack\\wwwroot\\images\\background.jpg",
+      "PackagePath": "staticwebassets\\images\\background.jpg"
+    },
+    {
       "Id": "D:\\repos\\Blackjack\\BlackJack\\BlackJack\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
