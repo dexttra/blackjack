@@ -39,6 +39,12 @@ To get started with the app, follow these steps:
     dotnet run
     ```
 ### 🟥 Project Demonstration:
+<img src="https://github.com/user-attachments/assets/2369f41f-f131-44f1-b81d-5417476589b5" width="300" />
+<img src="https://github.com/user-attachments/assets/49dffd84-9323-449f-8545-ee76a389f505" width="300" />
+<img src="https://github.com/user-attachments/assets/3dadf2cc-faa0-4ce6-92a1-6bbbb65e1a11" width="300" />
+<img src="https://github.com/user-attachments/assets/0d5b6416-42ea-452a-8553-e2ec214313f5" width="300" />
+<img src="https://github.com/user-attachments/assets/4c4df3a8-21fb-451c-b493-b1e487cc552d" width="300" />
+<img src="https://github.com/user-attachments/assets/ae445709-4965-47a6-98fd-50ef2155affe" width="300" />
 
 
 
